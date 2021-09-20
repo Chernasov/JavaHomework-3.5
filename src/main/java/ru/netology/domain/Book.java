@@ -22,12 +22,6 @@ public class Book extends Product {
     }
 
     public boolean matches(String search) {
-        if (super.matches(search)) {
-            return true;
-        }
-        if (author.contains(search)) {
-            return true;
-        }
-        return false;
+        return (super.matches(search)) || (author.contains(search)) ||  false;
     }
 }

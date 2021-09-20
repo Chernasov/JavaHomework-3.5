@@ -39,26 +39,9 @@ public class Product {
     }
 
     public boolean matches(String search) {
-//        if (product instanceof Book) {
-//            Book book = (Book) product;
-//            if (book.getAuthor().contains(search)) {
-//                return true;
-//            }
-            if (name.contains(search)) {
-                return true;
-            }
-//            return false;
-//        }
-//        if (product instanceof Smartphone) {
-//            Smartphone smartphone = (Smartphone) product;
-//            if (smartphone.getManufacturer().contains(search)) {
-//                return true;
-//            }
-//            if (name.contains(search)) {
-//                return true;
-//            }
-//            return false;
-//        }
+        if (name.contains(search)) {
+            return true;
+        }
         return false;
     }
 }

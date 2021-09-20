@@ -77,7 +77,7 @@ class ProductManagerTest {
     @Test
     void shouldSearchByVoid() {
         Product[] actual = manager.searchBy("");
-        Product[] expected = new Product[] {first, second, third, fourth, fifth, sixth};
+        Product[] expected = new Product[] {first, second, third, fourth, fifth, sixth, seventh};
         assertArrayEquals(expected, actual);
     }
 
